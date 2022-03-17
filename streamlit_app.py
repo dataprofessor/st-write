@@ -1,5 +1,6 @@
 import streamlit as st
 
+st.title('This is using st.title')
 st.header('This is using st.header')
 st.subheader('This is using st.subheader')
 st.write('This is using st.write')
