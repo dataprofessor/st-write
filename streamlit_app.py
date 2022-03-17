@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd
 
 st.title('This is using st.title')
 st.header('This is using st.header')
@@ -19,3 +20,9 @@ st.write('Hello world!')
 
 x = 'This text is from a variable and displayed in Streamlit via the built-in magic by simply calling the variable.'
 x
+
+
+st.header('Displaying a DataFrame')
+
+df = pd.read_csv('https://raw.githubusercontent.com/dataprofessor/data/master/iris.csv')
+df
