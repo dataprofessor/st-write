@@ -42,7 +42,13 @@ df = pd.read_csv('https://raw.githubusercontent.com/dataprofessor/data/master/ir
 df
 ```
 
-Note: In the above code box on Lines 28 and 31, replace ''' with ```.
+Note: In the above code box on Lines 28 and 31 (see below), replace ''' with ```:
+```python
+'''python
+import streamlit as st
+st.write('Hello world!')
+'''
+```
 
 ## References
 Read in the Streamlit API Documentation about:
