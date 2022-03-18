@@ -42,6 +42,8 @@ df = pd.read_csv('https://raw.githubusercontent.com/dataprofessor/data/master/ir
 df
 ```
 
+Note: In the above code box on Lines 28 and 31, replace ''' with ```.
+
 ## References
 Read in the Streamlit API Documentation about:
 - [`st.write`](https://docs.streamlit.io/library/api-reference/text/st.write)
