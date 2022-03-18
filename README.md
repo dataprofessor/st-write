@@ -12,7 +12,7 @@ In addition to `st.write` there are several ways to display text in a Streamlit 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/st-write/)
 
 ## Code
-Contents of the `streamlit_app.py` file:
+Contents of the [`streamlit_app.py`](https://github.com/dataprofessor/st-write/raw/master/streamlit_app.py) file:
 ```python
 import streamlit as st
 import pandas as pd
