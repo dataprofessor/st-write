@@ -25,10 +25,7 @@ st.markdown("This is using st.markdown, which can leverage markdown's functional
 st.markdown('''
 Text can also be entered on multiple lines by encapsulating via three opening and closing quotes.
 Code snippets can also be displayed like so:
-```python
-import streamlit as st
-st.write('Hello world!')
-```
+
 ''')
 
 
