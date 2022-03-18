@@ -2,10 +2,15 @@ import streamlit as st
 import pandas as pd
 
 st.title('This is using st.title')
+
 st.header('This is using st.header')
+
 st.subheader('This is using st.subheader')
+
 st.write('This is using st.write')
+
 st.markdown("This is using st.markdown, which can leverage markdown's functionality, e.g. *bold*, **italic**, ***bold and italic***, `highlights`, etc.")
+
 st.markdown('''
 Text can also be entered on multiple lines by encapsulating via three opening and closing quotes.
 
