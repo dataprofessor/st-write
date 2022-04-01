@@ -1,33 +1,28 @@
-import streamlit as st
+import numpy as np
+import altair as alt
 import pandas as pd
-
-st.title('This is using st.title')
-
-st.header('This is using st.header')
-
-st.subheader('This is using st.subheader')
-
-st.write('This is using st.write')
-
-st.markdown("This is using st.markdown, which can leverage markdown's functionality, e.g. *bold*, **italic**, ***bold and italic***, `highlights`, etc.")
-
-st.markdown('''
-Text can also be entered on multiple lines by encapsulating via three opening and closing quotes.
-
-Code snippets can also be displayed like so:
-```python
 import streamlit as st
 
-st.write('Hello world!')
-```
-''')
+# Example 1
+st.write('Hello, *World!* :sunglasses:')
 
+# Example 2
+st.write(1234)
 
-x = 'This text is from a variable and displayed in Streamlit via the built-in magic by simply calling the variable.'
-x
+# Example 3
+df = pd.DataFrame({
+     'first column': [1, 2, 3, 4],
+     'second column': [10, 20, 30, 40]
+     })
+st.write(df)
 
+# Example 4
+st.write('Below is a DataFrame:', df, 'Above is a dataframe.')
 
-st.header('Displaying a DataFrame')
-
-df = pd.read_csv('https://raw.githubusercontent.com/dataprofessor/data/master/iris.csv')
-df
+# Example 5
+df2 = pd.DataFrame(
+     np.random.randn(200, 3),
+     columns=['a', 'b', 'c'])
+c = alt.Chart(df2).mark_circle().encode(
+     x='a', y='b', size='c', color='c', tooltip=['a', 'b', 'c'])
+st.write(c)
