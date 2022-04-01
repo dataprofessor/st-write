@@ -2,10 +2,6 @@
 
 `st.write` allows writing text and arguments to the Streamlit app.
 
-## Demo app
-
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/st.write/)
-
 ## What arguments can be written out?
 
 In addition to being able to display text, the following can also be displayed via the `st.write()` method:
@@ -26,15 +22,15 @@ import streamlit as st
 st.header('st.write')
 
 # Example 1
-st.subheader('Display text')
+
 st.write('Hello, *World!* :sunglasses:')
 
 # Example 2
-st.subheader('Display numbers')
+
 st.write(1234)
 
 # Example 3
-st.subheader('Display DataFrame')
+
 df = pd.DataFrame({
      'first column': [1, 2, 3, 4],
      'second column': [10, 20, 30, 40]
@@ -42,18 +38,17 @@ df = pd.DataFrame({
 st.write(df)
 
 # Example 4
-st.subheader('Accept multiple arguments')
+
 st.write('Below is a DataFrame:', df, 'Above is a dataframe.')
 
 # Example 5
-st.subheader('Display charts')
+
 df2 = pd.DataFrame(
      np.random.randn(200, 3),
      columns=['a', 'b', 'c'])
 c = alt.Chart(df2).mark_circle().encode(
      x='a', y='b', size='c', color='c', tooltip=['a', 'b', 'c'])
 st.write(c)
-
 ```
 
 ## Line-by-line explanation
@@ -68,21 +63,18 @@ st.header('st.write')
 ```
 
 **Example 1**
-
 Its basic use case is to display text and Markdown-formatted text:
 ```python
 st.write('Hello, *World!* :sunglasses:')
 ```
 
 **Example 2**
-
 As mentioned above, it can also be used to display other data formats such as numbers:
 ```python
 st.write(1234)
 ```
 
 **Example 3**
-
 DataFrames can also be displayed as follows:
 ```python
 df = pd.DataFrame({
@@ -93,14 +85,12 @@ st.write(df)
 ```
 
 **Example 4**
-
 You can pass in multiple arguments:
 ```python
 st.write('Below is a DataFrame:', df, 'Above is a dataframe.')
 ```
 
 **Example 5**
-
 Finally, you can also display plots as well by passing it to a variable as follows:
 ```python
 df2 = pd.DataFrame(
@@ -111,12 +101,27 @@ c = alt.Chart(df2).mark_circle().encode(
 st.write(c)
 ```
 
+## Demo app
+The deployed Streamlit app should look something like the one shown in the below link: 
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/st.write/)
+
+## Next steps
+
+Now that you have created the Streamlit app locally, it's time to deploy it to [Streamlit Cloud](https://streamlit.io/cloud) as will be explained soon in an upcoming challenge. 
+
+Because this is the first week of your challenge, we provide the full code (as shown in the code box above) and solution (the demo app) right inside this webpage. 
+
+Moving forward in the next challenges, it is recommended that you first try implementing the Streamlit app yourself.
+
+Don't worry if you get stuck, you can always take a peek at the solution.
+
 ## Further reading
 In addition to [`st.write`](https://docs.streamlit.io/library/api-reference/write-magic/st.write), you can explore the other ways of displaying text:
-- [st.markdown](https://docs.streamlit.io/library/api-reference/text/st.markdown)
-- [st.header](https://docs.streamlit.io/library/api-reference/text/st.header)
-- [st.subheader](https://docs.streamlit.io/library/api-reference/text/st.subheader)
-- [st.caption](https://docs.streamlit.io/library/api-reference/text/st.caption)
-- [st.text](https://docs.streamlit.io/library/api-reference/text/st.text)
-- [st.latex](https://docs.streamlit.io/library/api-reference/text/st.latex)
-- [st.code](https://docs.streamlit.io/library/api-reference/text/st.code)
+- [`st.markdown`](https://docs.streamlit.io/library/api-reference/text/st.markdown)
+- [`st.header`](https://docs.streamlit.io/library/api-reference/text/st.header)
+- [`st.subheader`](https://docs.streamlit.io/library/api-reference/text/st.subheader)
+- [`st.caption`](https://docs.streamlit.io/library/api-reference/text/st.caption)
+- [`st.text`](https://docs.streamlit.io/library/api-reference/text/st.text)
+- [`st.latex`](https://docs.streamlit.io/library/api-reference/text/st.latex)
+- [`st.code`](https://docs.streamlit.io/library/api-reference/text/st.code)
