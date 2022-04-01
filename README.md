@@ -23,6 +23,8 @@ import altair as alt
 import pandas as pd
 import streamlit as st
 
+st.header('st.write')
+
 # Example 1
 st.subheader('Display text')
 st.write('Hello, *World!* :sunglasses:')
@@ -58,6 +60,11 @@ st.write(c)
 The very first thing to do when creating a Streamlit app is to start by importing the `streamlit` library as `st` like so:
 ```python
 import streamlit as st
+```
+
+This is followed by creating a header text for the app:
+```python
+st.header('st.write')
 ```
 
 **Example 1**
