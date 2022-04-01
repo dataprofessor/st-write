@@ -2,14 +2,21 @@
 
 `st.write` allows writing text and arguments to the Streamlit app.
 
-## What arguments can be written out?
-
 In addition to being able to display text, the following can also be displayed via the `st.write()` method:
 - Prints strings; works like `st.markdown()`
 - Displays a Python `dict`
 - Displays `pandas` DataFrame can be displayed as a table
 - Plots/graphs/figures from `matplotlib`, `plotly`, `altair`, `graphviz`, `bokeh`
 - And more (see [st.write on API docs](https://docs.streamlit.io/library/api-reference/write-magic/st.write))
+
+## What we're building?
+
+A simple app showing the various ways on how to use the `st.write()` method for displaying text, numbers, DataFrames and plots.
+
+## Demo app
+The deployed Streamlit app should look something like the one shown in the below link: 
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/st.write/)
 
 ## Code
 Here's how to use st.write:
@@ -100,11 +107,6 @@ c = alt.Chart(df2).mark_circle().encode(
      x='a', y='b', size='c', color='c', tooltip=['a', 'b', 'c'])
 st.write(c)
 ```
-
-## Demo app
-The deployed Streamlit app should look something like the one shown in the below link: 
-
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/st.write/)
 
 ## Next steps
 
