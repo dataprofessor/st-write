@@ -3,6 +3,8 @@ import altair as alt
 import pandas as pd
 import streamlit as st
 
+st.header('st.write')
+
 # Example 1
 st.subheader('Display text')
 st.write('Hello, *World!* :sunglasses:')
