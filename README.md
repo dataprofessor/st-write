@@ -55,18 +55,21 @@ import streamlit as st
 ```
 
 **Example 1**
+
 Its basic use case is to display text and Markdown-formatted text:
 ```python
 st.write('Hello, *World!* :sunglasses:')
 ```
 
 **Example 2**
+
 As mentioned above, it can also be used to display other data formats such as numbers:
 ```python
 st.write(1234)
 ```
 
 **Example 3**
+
 DataFrames can also be displayed as follows:
 ```python
 df = pd.DataFrame({
@@ -77,12 +80,14 @@ st.write(df)
 ```
 
 **Example 4**
+
 You can pass in multiple arguments:
 ```python
 st.write('Below is a DataFrame:', df, 'Above is a dataframe.')
 ```
 
 **Example 5**
+
 Finally, you can also display plots as well by passing it to a variable as follows:
 ```python
 df2 = pd.DataFrame(
