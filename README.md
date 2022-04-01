@@ -2,7 +2,11 @@
 
 `st.write` allows writing text and arguments to the Streamlit app.
 
-### What arguments can be written out?
+## Demo app
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/st-write/)
+
+## What arguments can be written out?
 
 In addition to being able to display text, the following can also be displayed via the `st.write()` method:
 - Prints strings; works like `st.markdown()`
@@ -11,7 +15,7 @@ In addition to being able to display text, the following can also be displayed v
 - Plots/graphs/figures from `matplotlib`, `plotly`, `altair`, `graphviz`, `bokeh`
 - And more (see [st.write on API docs](https://docs.streamlit.io/library/api-reference/write-magic/st.write))
 
-### Code
+## Code
 Here's how to use st.write:
 ```python
 import numpy as np
@@ -44,7 +48,7 @@ c = alt.Chart(df2).mark_circle().encode(
 st.write(c)
 ```
 
-### Line-by-line explanation
+## Line-by-line explanation
 The very first thing to do when creating a Streamlit app is to start by importing the `streamlit` library as `st` like so:
 ```python
 import streamlit as st
@@ -89,22 +93,7 @@ c = alt.Chart(df2).mark_circle().encode(
 st.write(c)
 ```
 
-### Demo app
-The deployed Streamlit app should look something like the one shown in the below link: 
-
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/st-write/)
-
-### Next steps
-
-Now that you have created the Streamlit app locally, it's time to deploy it to [Streamlit Cloud](https://streamlit.io/cloud) as will be explained soon in an upcoming challenge. 
-
-Because this is the first week of your challenge, we provide the full code (as shown in the code box above) and solution (the demo app) right inside this webpage. 
-
-Moving forward in the next challenges, it is recommended that you first try implementing the Streamlit app yourself.
-
-Don't worry if you get stuck, you can always take a peek at the solution.
-
-### Further reading
+## Further reading
 In addition to [`st.write`](https://docs.streamlit.io/library/api-reference/write-magic/st.write), you can explore the other ways of displaying text:
 - [st.markdown](https://docs.streamlit.io/library/api-reference/text/st.markdown)
 - [st.header](https://docs.streamlit.io/library/api-reference/text/st.header)
